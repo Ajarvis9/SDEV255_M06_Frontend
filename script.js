@@ -2,7 +2,7 @@
 // aka upon visiting webpage
 
 addEventListener("DOMContentLoaded", async function(){
-    const response = await fetch("https://glitch.com/edit/#!/calm-pumped-mayflower")
+    const response = await fetch("https://calm-pumped-mayflower.glitch.me/api/songs")
     const songs = await response.json()
 
     let html = ""
