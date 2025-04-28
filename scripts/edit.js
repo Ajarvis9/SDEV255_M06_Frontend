@@ -1,8 +1,8 @@
 addEventListener("DOMContentLoaded", async function(){
-    document.querySelector("updateBtn").addEventListener("click", updateSong)
+    document.querySelector("#updateBtn").addEventListener("click", updateSong)
     const urlparam = new URLSearchParams(window.location.search)
     const songID = urlparam.get('id')
-    const response = await fetch("https://calm-pumped-mayflower.glitch.me/api/songs" + songID)
+    const response = await fetch("https://lumbar-angry-politician.glitch.me/api/songs" + songID)
     if(response.ok){
         let song = await response.json()
         document.querySelector("#songId").value = song._id

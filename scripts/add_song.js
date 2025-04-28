@@ -15,7 +15,7 @@ async function addSong(){
         genre: document.querySelector("#genre").value ? document.querySelector("#genre").value.split(",") : []
     }
 
-    const response = await fetch("https://calm-pumped-mayflower.glitch.me/api/songs", {
+    const response = await fetch("https://lumbar-angry-politician.glitch.me/api/songs", {
         method: "POST",
         headers:{
             "Content-Type" : "application/json"
