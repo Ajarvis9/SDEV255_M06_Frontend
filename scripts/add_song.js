@@ -12,7 +12,8 @@ async function addSong(){
         artist: document.querySelector("#artist").value,
         releaseDate: document.querySelector("#released").value,
         popularity: document.querySelector("#popularity").value,
-        genre: document.querySelector("#genre").value ? document.querySelector("#genre").value.split(",") : []
+        genre: document.querySelector("#genre").value ? document.querySelector("#genre").value.split(",") : [],
+        username: localStorage.getItem("#uname")
     }
 
     const response = await fetch("https://lumbar-angry-politician.glitch.me/api/songs", {
